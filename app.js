@@ -2,13 +2,38 @@ let userInput = document.getElementById("val");
 let checkval = document.getElementById("check");
 let retry = document.getElementById("retry");
 let rv = document.getElementById("decision");
+let mode = document.getElementById("mode");
 let random_var = Math.floor(Math.random()*101);
-let tries = 4;
+let tries;
+let flag = false;
 
-console.log(random_var);
+mode.addEventListener("click", function(event){
+    if(event.target.tagName === "BUTTON" && flag === false){
+        let vid = event.target.id;
+        if (vid === "btn-ez") {
+            tries = 9;
+            rv.innerHTML = "Easy Mode";
+        } else if(vid === "btn-med"){
+            tries = 7;
+            rv.innerHTML = "Medium Mode";
+        } else if(vid === "btn-hrd"){
+            tries = 5;
+            rv.innerHTML = "Hard Mode";
+        } else if(vid === "btn-xtr"){
+            tries = 3;
+            rv.innerHTML = "Extreme Mode";
+        } else if(vid === "btn-god"){
+            tries = 0;
+            rv.innerHTML = "God Mode";
+        }
+    }
+    rv.style.cssText = "color: #fff; font-size: 50px; text-align: center;"
+    flag = true;
+    mode.disabled = true;
+});
 
 checkval.addEventListener("click", function(){
-    if(userInput.value < 100 && userInput.value > 0){
+    if(userInput.value < 100 && userInput.value > 0 && flag === true){
         if (tries > 0) {
             if(userInput.value == random_var){
                 rv.innerHTML = "Correct Answer!!<br>You win!!"
@@ -46,8 +71,13 @@ checkval.addEventListener("click", function(){
         }
     }
     else{
-        rv.innerHTML = "Enter Valid Input";
-        rv.style.cssText = "color: #fff; font-size: 50px; text-align: center;"
+        if (flag === false) {
+            rv.innerHTML = "Choose which mode you want to play!";
+            rv.style.cssText = "color: #fff; font-size: 50px; text-align: center;"
+        } else {   
+            rv.innerHTML = "Enter Valid Input";
+            rv.style.cssText = "color: #fff; font-size: 50px; text-align: center;"
+        }
     }
 });
 
