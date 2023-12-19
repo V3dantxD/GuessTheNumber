@@ -12,24 +12,24 @@ mode.addEventListener("click", function(event){
         let vid = event.target.id;
         if (vid === "btn-ez") {
             tries = 9;
-            rv.innerHTML = "Easy Mode";
+            rv.innerHTML = "Mode: Easy";
         } else if(vid === "btn-med"){
             tries = 7;
-            rv.innerHTML = "Medium Mode";
+            rv.innerHTML = "Mode : Medium";
         } else if(vid === "btn-hrd"){
             tries = 5;
-            rv.innerHTML = "Hard Mode";
+            rv.innerHTML = "Mode : Hard";
         } else if(vid === "btn-xtr"){
             tries = 3;
-            rv.innerHTML = "Extreme Mode";
+            rv.innerHTML = "Mode : Extreme";
         } else if(vid === "btn-god"){
             tries = 0;
-            rv.innerHTML = "God Mode";
+            rv.innerHTML = "Mode : God";
         }
     }
     rv.style.cssText = "color: #fff; font-size: 50px; text-align: center;"
     flag = true;
-    mode.disabled = true;
+    mode.style.cssText = "display:none;";
 });
 
 checkval.addEventListener("click", function(){
