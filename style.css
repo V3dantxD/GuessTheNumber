@@ -97,6 +97,9 @@ button:hover{
 @media (min-width:100px) and (max-width:740px){
     .footer{
         font-size: 45px;
+        background-image: linear-gradient(rgb(172, 172, 255), rgb(255, 134, 255), rgb(255, 139, 139));
+        color: transparent;
+        background-clip: text;
     }
     #retry{
         margin: 20px 5px;
