@@ -6,9 +6,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .footer{
-    background-image: linear-gradient(rgb(97, 97, 255), rgb(109, 255, 133), rgb(255, 139, 139));
+    /* background-image: linear-gradient(rgb(97, 97, 255), rgb(109, 255, 133), rgb(255, 139, 139));
     color: transparent;
-    background-clip: text;
+    background-clip: text; */
+    color: #fff;
     font-size: 55px;
     text-align: center;
 }
