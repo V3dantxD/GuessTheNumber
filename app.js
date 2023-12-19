@@ -27,7 +27,7 @@ mode.addEventListener("click", function(event){
             rv.innerHTML = "Mode : God";
         }
     }
-    rv.style.cssText = "color: #fff; font-size: 50px; text-align: center;"
+    rv.style.cssText = "color: #fff; font-size: 45px; text-align: center;"
     flag = true;
     mode.style.cssText = "display:none;";
 });

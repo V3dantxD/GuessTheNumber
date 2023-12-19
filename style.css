@@ -6,7 +6,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .footer{
-    background-image: linear-gradient(rgb(172, 172, 255), rgb(255, 134, 255), rgb(255, 139, 139));
+    background-image: linear-gradient(rgb(97, 97, 255), rgb(109, 255, 133), rgb(255, 139, 139));
     color: transparent;
     background-clip: text;
     font-size: 55px;
@@ -97,9 +97,6 @@ button:hover{
 @media (min-width:100px) and (max-width:740px){
     .footer{
         font-size: 45px;
-        background-image: linear-gradient(rgb(172, 172, 255), rgb(255, 134, 255), rgb(255, 139, 139));
-        color: transparent;
-        background-clip: text;
     }
     #retry{
         margin: 20px 5px;
