@@ -5,10 +5,10 @@
     font-family: 'Open Sans';
 }
 .footer{
-    background-image: linear-gradient(to left , rgb(97, 97, 255), rgb(201, 109, 255), rgb(233, 86, 86));
+    /* background-image: linear-gradient(to left , rgb(97, 97, 255), rgb(201, 109, 255), rgb(233, 86, 86));
     color: transparent;
-    background-clip: text;
-    /* color: #fff; */
+    background-clip: text; */
+    color: #fff;
     font-size: 58px;
     text-align: center;
     padding-bottom: 50px;
