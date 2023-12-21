@@ -9,7 +9,7 @@
     color: transparent;
     background-clip: text; */
     color: #fff;
-    font-size: 58px;
+    font-size: 50px;
     text-align: center;
     padding-bottom: 50px;
 }
@@ -94,26 +94,30 @@ button:hover{
 }
 @media (min-width:100px) and (max-width:740px){
     .footer{
-        font-size: 45px;
+        font-size: 40px;
     }
     #retry{
         margin: 20px 5px;
+        width: 70px;
+        margin: 20px 5px;
     }
     #check{
+        height: 30px;
+        width: 70px;
         margin: 20px 5px;
     }
     #val{
         width: 50vw;
     }
     .btn{
-        width: 80px;
-        height: 45px;
-        font-size: 16px;
+        width: 70px;
+        height: 40px;
+        font-size: 15px;
     }
     #mode{
         flex-wrap: wrap;
     }
     .clr{
-        margin: 0px 50px;
+        margin: 0px 40px;
     }
 }
